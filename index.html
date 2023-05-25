@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e1b9e82d8a.js" crossorigin="anonymous"></script>
+    <title>Júlia M.</title>
+</head>
+<body>
+    <header id="header">
+        <img src="img/textura-branca.jpg" id="paper" alt="">
+        <div class="logo">
+            <a href="#"><h3>Júlia Marques</h3></a>
+        </div>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+<!--         <div class="darkmode">
+            <i class="fa-regular fa-moon"></i>
+            <a href=""><h3 class="mode">mode</h3></a>
+        </div> -->
+    </header>
+
+    <div class="linhas">
+        <div class="linha1"></div>
+        <!-- <div class="linha2"></div> -->
+        <div class="horizontal-line"></div>
+        <div class="horizontal-line2"></div>
+        <div class="vertical-line"></div>
+        <div class="vertical-line-right"></div>
+    </div>
+    
+    <section class="home" id="home">
+        <div class="title">
+            <h2>👋, Meu nome é Júlia</h2>
+            <h1>Eu sou <span class="multiple-text"></span></h1>
+            <p>Comprometida em transformar ideias em realidade<br> através da programação.</p>
+            <button>Entre em contato</button>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/j%C3%BAlia-marques-153085267"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/juliammneves"><i class="fa-brands fa-github"></i></i></a>
+            <a href="https://www.instagram.com/juliammneves/"><i class="fa-brands fa-instagram"></i></i></a>
+        </div>
+        <a href="#sobre"><div class="scroll-sign">
+            <p>Role para baixo</p>
+            <i class="fa-solid fa-arrow-down fa-bounce"></i>
+        </div></a>
+    </section>
+    <canvas id="canvas" style="position: absolute; top: 0; left: 0; z-index: -3; width: calc(91.8%); height: calc(91.4%); margin: 4.1%; display: block;"></canvas>
+    
+    <section class="sobre" id="sobre">
+        <img src="img/textura-branca.jpg" id="paper1" alt="">
+        <div class="box1">
+            <h1>Sobre <span>mim</span></h1>
+            <div class="choice">
+                <h3>ajuste o tamanho da bio:</h3>
+                <div class="bolinhas">
+                    <input type="radio" name="option" id="option1" class="radio-input" onchange="changeText(this)">
+                    <label for="option1"></label>
+
+                    <input type="radio" name="option" id="option4" class="radio-input" onchange="changeText(this)" checked>
+                    <label for="option4"></label>
+
+                    <input type="radio" name="option" id="option6" class="radio-input" onchange="changeText(this)">
+                    <label for="option6"></label>
+                </div>
+                <div class="det">
+                    <h3>menor</h3>
+                    <h3>maior</h3>
+                </div>
+            </div>
+            <p id="selected-option">&nbsp &nbsp &nbsp &nbsp Sou uma entusiasta da Engenharia de Software. Com um foco especial em front-end, estou sempre buscando aprimorar minhas habilidades em HTML, CSS e JavaScript para criar experiências web incríveis. Além disso, tenho um interesse crescente em back-end e data science, explorando linguagens como Python e aprendizado de máquina. Sou uma profissional comprometida, criativa e apaixonada por resolver problemas complexos. Com uma abordagem colaborativa, estou pronta para contribuir em projetos desafiadores e alcançar resultados excepcionais. Vamos juntos criar soluções impactantes e inovadoras!</p>
+            <div class="icons">
+                <h3>minhas redes:</h3>
+                <a href="https://www.linkedin.com/in/j%C3%BAlia-marques-153085267"><i class="fa-brands fa-linkedin-in" id="i1"></i></a>
+                <a href="https://github.com/juliammneves"><i class="fa-brands fa-github"></i></i></a>
+                <a href="https://www.instagram.com/juliammneves/"><i class="fa-brands fa-instagram " id="i2"></i></i></a>
+            </div>
+        </div>
+        <div class="box2">
+            <img src="img/Software code testing-amico (1).png" alt="">
+        </div>
+    </section>
+
+    <section class="skills">
+        <img src="img/textura-branca.jpg" id="paper" alt="">
+        <div class="box3">
+            <h3>skills</h3>
+            <div class="container">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number">94%</div>
+                            <h4>HTML</h4>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 160px; height: 160px;">
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number">75%</div>
+                            <h4>CSS</h4>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="cs" style="width: 160px; height: 160px;">
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number">39%</div>
+                            <h4>JS</h4>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="js" style="width: 160px; height: 160px;">
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number">43%</div>
+                            <h4>Python</h4>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="py" style="width: 160px; height: 160px;">
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+            
+        </div>
+        <div class="box4">
+            <h3>serviços</h3>
+            <h1>O que eu posso fazer?</h1>
+            <div class="servicos">
+                <div class="servico">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Crio interfaces visuais atraentes e intuitivas, combinando design estético com usabilidade e navegação eficiente.</p>
+                </div>
+                <div class="servico">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p>Utilizo HTML, CSS e JavaScript para criar interfaces responsivas e acessíveis. Implemento as melhores práticas e técnicas modernas.</p>
+                </div>
+                <div class="servico">
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Back-End Development</h2>
+                    <p>Construo sistemas escaláveis e seguros, utilizando linguagens de programação  para garantir um funcionamento eficiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <img src="img/textura-branca.jpg" id="paper1" alt="">
+        <h1>Portifólio</h1>
+        <div class="projetos">
+            <div class="projeto">
+                <div class="pc">
+                    <img src="img/laptop.png" alt="">
+                    <div class="screen">
+                        <img src="img/GlowUp.png" alt="" class="glowup">
+                    </div>
+                </div>
+            </div>
+            <div class="mini-box">
+                <h2>GlowUp.</h2>
+                <p>Uma empresa de iluminação inteligente pública, desenvolvida em parceria com a IBM. Utilizando tecnologias como IoT e machine learning, nosso objetivo é melhorar a eficiência energética e a segurança nas cidades. Com sistemas adaptáveis e monitoramento em tempo real, estamos transformando a iluminação pública para tornar as cidades mais sustentáveis e conectadas. Junte-se a nós nessa revolução e faça parte do futuro iluminado da GlowUp.</p>
+                <div class="links">
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/juliammneves/GlowUp-2.0">Ver mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="por2">
+        <img src="img/textura-branca.jpg" id="paper" alt="">
+        <div class="projetos">
+            <div class="mini-box1">
+                <h2>Agnello</h2>
+                <p>O Agnello é um site dedicado ao mundo dos vinhos, onde os amantes da bebida podem explorar uma variedade de informações, desde recomendações de especialistas até dicas de degustação e harmonização. Com uma seleção cuidadosamente escolhida de vinhos de diferentes regiões e safras, os usuários podem descobrir perfis de sabor, notas de degustação e características únicas de cada vinho. O Agnello também oferece uma experiência interativa, permitindo avaliações, comentários e compras diretas dos vinhos selecionados. Junte-se a nós no Agnello para mergulhar no fascinante mundo dos vinhos e compartilhar a paixão por essa arte.</p>
+                <div class="links">
+                    <i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/juliammneves/Agnello">Ver mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="projeto">
+                <div class="pc">
+                    <img src="img/laptop.png" alt="">
+                    <div class="screen">
+                        <img src="img/Agnello.png" alt="" class="glowup">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/juliammneves"><h1>Veja mais projetos no meu GitHub!</h1></a>
+    </section>
+
+    <section class="contato" id="contato">
+        <img src="img/textura-branca.jpg" id="paper1" alt="">
+        <div class="horizontal-line3"></div>
+        <h1>Contate-me</h1>
+        <h3 id="h3">Entre em contato</h3>
+        <div class="box">
+            <div class="myInfo">
+                <h3><i class="fa-regular fa-comment"></i> Fale comigo</h3>
+                <div class="info">
+                    <h4>Email</h4>
+                    <a href="">juliammneves@gmail.com</a>                    
+                </div>
+                <div class="info">
+                    <h4>Whatsapp</h4>
+                    <a href="">+55 11 97111-7202</a>
+                </div>
+                <div class="info">
+                    <h4>LinkedIn</h4>
+                    <a href="https://www.linkedin.com/in/j%C3%BAlia-marques-153085267">Júlia Marques</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3><i class="fa-regular fa-paper-plane"></i> Escreva sobre seu projeto</h3>
+                <form action="contato.html" method="post" class="contact-form">
+                    <div class="input-wrap">
+                        <input class="contact-input" autocomplete="off" name="First Name" type="text" required placeholder="Digite seu nome">
+                    </div>
+                    <div class="input-wrap w-100">
+                        <input class="contact-input" autocomplete="off" name="Email" type="email" required placeholder="Digite seu email">
+                    </div>
+                    <div class="input-wrap w-100">
+                        <textarea name="Message" autocomplete="off" class="contact-input" placeholder="informações sobre o projeto"></textarea>
+                    </div>
+                    <div class="send-input">
+                        <input type="submit" value="Enviar" class="send w-100">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p>© Júlia Marques 2023.</p>
+    </section>
+    
+    <a href="#header" class="scrollup" id="scroll-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    
+    
+
+    
+    <script type="text/javascript" src="https://hovertree.com/texiao/html5/index/hovertreewelcome.js">
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

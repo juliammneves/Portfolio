@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@font-face {
+    font-family: 'CabinetGrotesk-Variable';
+    src: url('../fonts/CabinetGrotesk-Variable.woff2') format('woff2'),
+         url('../fonts/CabinetGrotesk-Variable.woff') format('woff'),
+         url('../fonts/CabinetGrotesk-Variable.ttf') format('truetype');
+         font-weight: 100 900;
+         font-display: swap;
+         font-style: normal;
+}
+
+.screen::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    overflow-x: hidden;
+    background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+:root{
+    --bg: #f1f1f1;
+    --main: #72a065; 
+    --text: #000000;
+    --font: 'CabinetGrotesk-Variable';
+}
+
+a{
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+}
+h1{
+    font-size: 65px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: var(--font);
+    color: var(--font);
+}
+body {
+    background-color: var(--bg);
+}
+/* body.dark{
+    --bg: #000;
+    --main: #72a065; 
+    --text: #f1f1f1;
+    --font: 'CabinetGrotesk-Variable';
+} */
+#paper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -5;
+    opacity: .8;
+}
+#paper1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -5;
+    opacity: .8;
+    transform: scaleX(-1) scaleY(-1);
+}
+/* ========== Nav Bar ========== */
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2% 6%;
+    
+}
+
+.logo{
+    display: flex;
+}
+header h3{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li a{
+    margin: 0 50px;
+}
+
+.darkmode{
+    display: flex;
+    align-items: center;
+}
+.darkmode i{
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+/* ==== Responsividade ==== */
+#menu-icon{
+    font-size: 2rem;
+    color: var(--text);
+    display: none;
+}
+/* ==== Responsividade ==== */
+/* ========== Nav Bar ========== */
+
+
+
+/* ========== linhas ========== */
+.linhas{
+    opacity: .3;
+}
+.linha1{
+    position: absolute;
+    top: 0;
+    height: 8.5%;
+    width: 1px;
+    left: 15.1%;
+    background-color: #000000;
+}
+.linha2{
+    position: absolute;
+    top: 0;
+    height: 8.5%;
+    width: 1px;
+    right: 12%;
+    background-color: #000000;
+}
+.vertical-line{
+    position: fixed;
+    left: 4.1%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #000000; /* Cor da linha vertical */
+    z-index: 9999; /* Garante que a linha fique acima de outros elementos */
+}
+.vertical-line-right{
+    position: fixed;
+    right: 4.1%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #000000; /* Cor da linha vertical */
+    z-index: 9999; /* Garante que a linha fique acima de outros elementos */
+}
+.horizontal-line{
+    position: absolute;
+    right: 0;
+    top: 8.5%;
+    left: 0;
+    height: 1px;
+    background-color: #000000; /* Cor da linha vertical */
+    z-index: 9999; /* Garante que a linha fique acima de outros elementos */
+}
+.horizontal-line2{
+    position: absolute;
+    right: 0;
+    top: 100vh;
+    left: 0;
+    height: 1px;
+    background-color: #000000; /* Cor da linha vertical */
+    z-index: 9999; /* Garante que a linha fique acima de outros elementos */
+}
+.horizontal-line3{
+    position: absolute;
+    right: 0;
+    bottom: 8.5%;
+    left: 0;
+    height: 1px;
+    opacity: .3;
+    background-color: #000000; /* Cor da linha vertical */
+    z-index: 9999; /* Garante que a linha fique acima de outros elementos */
+}
+/* ========== linhas ========== */
+
+
+
+/* ========== Home ========== */
+.draw{
+    position: relative;
+    margin: 0 4.1%;
+}
+.home h1{
+    font-family: var(--font);
+    font-weight: 800;
+    font-size: 110px;
+    text-align: left;
+}
+.home svg{
+    position: fixed;
+    top: 15%;
+    left: 0;
+    z-index: -1;
+}
+.home{
+    height: 91.2vh;
+}
+.title{
+    margin: 10%;
+    position: absolute;
+}
+
+.home h1{
+    margin: 5px 0 20px;
+    line-height: 100px;
+}
+.home h2{
+    font-weight: 600;
+}
+.home span{
+    font-size: 100px;
+    font-weight: 900;
+    color: var(--main);
+}
+.home button{
+   padding: 15px;
+   background-color: var(--main);
+   margin-top: 20px;
+   border-radius: 5px;
+   color: var(--bg);
+   font-size: 15px;
+   font-weight: 400;
+   transition: all .3s;
+   cursor: pointer;
+}
+.home button:hover{
+    padding: 15px 30px;
+    box-shadow: 0 32px 32px rgba(27,27,27,.1), 0 16px 16px rgba(27,27,27,.1), 0 8px 8px rgba(27,27,27,.1), 0 4px 4px rgba(27,27,27,.1), 0 2px 2px rgba(27,27,27,.1);
+}
+
+.home .social-links{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 1.3%;
+    align-items: center;
+    top: 37%;
+}
+.home .social-links i{
+    font-size: 25px;
+    margin: 20px 0;
+    color: var(--text);
+    transition: all .3s;
+}
+.home .social-links i:hover{
+    color: var(--main);
+    transform: translateY(-5px);
+}
+
+.scroll-sign{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 90vh;
+    right: 8%;
+    cursor: default;
+    opacity: .5;
+    cursor: pointer;
+}
+.scroll-sign p{
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+.scroll-sign i{
+    margin-left: 5px;
+}
+/* ========== Home ========== */
+
+
+
+/* ========== Sobre ========== */
+.sobre{
+    position: relative;
+    padding:  1% 10% 5%;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+}
+.sobre span{
+    font-family: var(--font);
+    color: var(--main);
+}
+.box1{
+    width: 60rem;
+    height: 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bolinhas{
+    display: flex;
+    margin: 0 auto
+}
+.choice{
+    width: 210.6px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 30px;
+}
+.sobre h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.choice .det{
+    display: flex;
+    justify-content: space-between;
+}
+.radio-input {
+    display: none;
+}
+
+.radio-input + label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px 10px;
+    border: 2px solid var(--main);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.radio-input:checked + label {
+    background-color: var(--main);
+}
+.sobre .box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-left: 50px;
+}
+.box2 img{
+    height: 30rem;
+    transform: scaleX(-1);
+}
+.box1 .icons{
+    margin: 8% auto;
+    width: 244px;
+}
+.box1 .icons i{
+    padding: 12px;
+    border-radius: 50%;
+    background-color: var(--main);
+    font-size: 35px;
+    margin: 10px;
+    color: var(--bg);
+    transition: all .4s ease-in-out;
+}
+#i1, #i2{
+    padding: 12px 14px;
+}
+.box1 .icons i:hover{
+    background-color: var(--bg);
+    color: var(--main);
+    box-shadow: 0 32px 32px rgba(27,27,27,.1), 0 16px 16px rgba(27,27,27,.1), 0 8px 8px rgba(27,27,27,.1), 0 4px 4px rgba(27,27,27,.1), 0 2px 2px rgba(27,27,27,.1);
+}
+.icons h3{
+    text-align: center;
+}
+/* ========== Sobre ========== */
+
+
+
+/* ========== Skills ========== */
+.skills{
+    position: relative;
+    padding: 2% 10% 3.1px;
+}
+.skills h3{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--main);
+    text-align: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    margin: 20px 30px;
+}
+.outer{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(245, 245, 245, 0.7);
+}
+.inner{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+                inset -4px -4px 6px -1px rgba(245, 245, 245, 0.7),
+                -0.5px -0.5px 0px  rgba(245, 245, 245, 1),
+                0.5px 0.5px 0px rgba(0, 0, 0, 0.10),
+                0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+#number{
+    font-weight: 600;
+    font-size: 35px;
+    color: var(--main);
+}
+circle{
+    fill: none;
+    stroke: var(--main);
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+#py circle{
+    animation: anim1 2s linear forwards;
+}
+#js circle{
+    animation: anim2 2s linear forwards;
+}
+#cs circle{
+    animation: anim3 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 70;
+    }
+}
+@keyframes anim1{
+    100%{
+        stroke-dashoffset: 279;
+    }
+}
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 299;
+    }
+}
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 140;
+    }
+}
+
+.box4{
+    margin-top: 5%;
+}
+.servicos{
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    margin: 0 3%;
+}
+.servico{
+    padding: 30px 20px;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text);
+    border: 5px solid var(--main);
+    text-align: center;
+    border-radius: 25px;
+    cursor: default;
+    transition: all .5s ease-in-out;
+}
+.servico i{
+    font-size: 35px;
+    color: var(--main);
+}
+.servico:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+    background-color: var(--main);
+    color: var(--bg);
+}
+.servico h2{
+    font-family: var(--font);
+    margin: 15px 0 10px;
+    font-weight: 800;
+}
+/* ========== Skills ========== */
+
+
+
+/* ========== Portfolio ========== */
+.portfolio{
+    position: relative;
+    padding: 8% 10% 7%;
+}
+.projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    height: 50vh;
+}
+.portfolio h1{
+    margin-bottom: 60px;
+}
+.projetos h2{
+    color: var(--main);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.projetos .links{
+    display: flex;
+    align-items: center;
+    color: var(--main);
+    margin-top: 20px;
+    margin: 20px auto 0;
+}
+.projetos .links i{
+    font-size: 35px;
+    margin-right: 20px;
+}
+.projetos .links a{
+    font-size: 18px;
+    color: var(--main);
+    padding: 10px;
+    border: 3px solid var(--main);
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+}
+.projetos .links a i{
+    font-size: 18px;
+    transform: rotate(-45deg);
+    margin: 0;
+}
+.projetos .links a:hover{
+    background-color: var(--main);
+    color: #f1f1f1;
+    padding: 10px 25px;
+    box-shadow: 0 32px 32px rgba(27,27,27,.1), 0 16px 16px rgba(27,27,27,.1), 0 8px 8px rgba(27,27,27,.1), 0 4px 4px rgba(27,27,27,.1), 0 2px 2px rgba(27,27,27,.1);
+}
+.pc{
+    width: 600px;
+    height: 379px;
+    flex: 1;
+    position: relative;
+}
+.screen{
+    width: 450px;
+    height: 282px;
+    position: absolute;
+    top: 18.5px;
+    left: 69px;
+    background-color: #1e1e1e;
+    overflow-y: scroll;
+}
+.glowup{
+    width: 100%;
+}
+.projetos{
+    display: flex;
+    align-items: center;
+}
+.mini-box{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mini-box1{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.por2{
+    position: relative;
+    padding: 5% 10%;
+    height: 100vh;
+}
+.por2 h1{
+    font-size: 30px;
+    margin-top: 100px;
+    transition: all .3s ease-in-out;
+}
+.por2 h1:hover{
+    transform: translateY(-10px);
+}
+/* ========== Portfolio ========== */
+
+
+
+/* ========== Contato ========== */
+.contato{
+    position: relative;
+    padding: 2% 25%;
+    height: 100vh;
+}
+.contato h1{
+    margin-bottom: 0;
+}
+.contato #h3{
+   margin-bottom: 50px;
+}
+.contato h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contato .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.contato .info{
+    margin: 50px 0;
+}
+
+.contact-form{
+    display: grid;
+    margin-top: 2rem;
+    row-gap: 1rem;
+    width: 20rem;
+}
+.input-wrap{
+    position: relative;
+}
+.contact-input{
+    width: 100%;
+    background-color: transparent;
+    padding: .75rem 1.35rem;
+    border-radius: 2.5rem;
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid var(--text);
+}
+input::placeholder, textarea::placeholder{
+    font-size: 15px;
+    color: var(--text);
+}
+textarea.contact-input{
+    padding-top: 20px;
+    resize: none;
+    width: 100%;
+    min-height: 150px;
+}
+.send{
+    background-color: transparent;
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left; 
+}
+.send-input{
+    margin-left: 5px;
+}
+.send:hover{
+    text-decoration: underline;
+}
+.send-input i{
+    transform: rotate(-45deg
+    );
+}
+
+.contato p{
+    position: absolute;
+    bottom: 2.7%;
+    left: 10%;
+}
+/* ========== Contato ========== */
+
+
+
+/* ========== Scroll up ========== */
+.scrollup{
+    position: fixed;
+    right: 5%;
+    padding: 5px 8px;
+    bottom: -30%;
+    background-color: var(--main);
+    box-shadow: 0 4px 12px hsl(207, 24%, 35%, .15);
+    display: inline-flex;
+    border-radius: .25rem;
+    font-size: 1.1rem;
+    color: var(--bg);
+    z-index: 99999999;
+    transition: all .3s;
+}
+.scrollup:hover{
+    transform: translateY(-.25rem);
+}
+.show-scroll{
+    bottom: 6.5%;
+}
+/* ========== Scroll up ========== */
